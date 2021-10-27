@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Climate Action</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="actions.html">Actions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron bg-success text-light" style="border-radius: 0;">
+        <h1 class="display-4">What is Climate Change?</h1>
+        <p class="lead">Climate change refer to long-term shifts in temperature and weather patterns. These shifts may
+            be natural, but since 1800s, human activities have been the main driver of climate change, primarily due to
+            the burning of fossil fuels (coal, oil and gas), which produces heat-trapping gases</p>
+    </div>
+    <div class="container">
+        <h3 class="text-center">Greenhouse gases</h3>
+        <p class="lead">The main driver of climate change is the greenhouse effect. Some gases in the Earth's atmosphere act a bit like the glass in a greenhouse, trapping the sun's heat and stopping it from leaking back into space and causing global warming.</p>
+        <p class="lead">Many of these greenhouse gases occur naturally, but humam activity is increasing the concentrations of some of them in the atmosphere, in particular:
+            <ul>
+                <li>carbon dioxide (CO2)</li>
+                <li>methane</li>
+                <li>nitrous oxide</li>
+                <li>fluorinated gases</li>
+            </ul>
+        </p>
+        <div class="row">
+            <div class="col-md">
+                <h3>How does Climate change affect you?</h3>
+                <p class="lead">Climate change can affect our health, ability to grow food, housing, safety and work.
+                    Some of us are already more vulnerable to climate impacts such as people living in small island
+                    nations and other developing countries. Conditions like sea-level rise and saltwater intrusion have
+                    advanced to the point where whole communities have had to relocate, and protracted droughts are
+                    putting people at risk of famine. In the future, the number of "climate refugees" is expected to
+                    rise.</p>
+            </div>
+            <div class="col-md">
+                <h3>Solutions to Climate change</h3>
+                <p class="lead">Switching energy systems from fossil fuels to renewables like solar or wind reduce the emissions driving climate change. But we have to start right now. While a growing coalition of countries is committing to net zero emissions by 2050, about half of emissions cuts must be inplace by 2030 to keep warming below 1.5&#176 C. Fossil fuel production must decline by roughly 6 per cent per year between 2020 and 2030</p>
+            </div>
+        </div>
+        <h3>Effects of climate change</h3>
+        <p class="lead">Warmer temperatures over time are changing weather patterns and disrupting the usual balance of nature. This poses many risks to human beings and all other forms of life on Earth.</p>
+        <div class="row">
+            <div class="col-sm">
+                <h4>Hotter temperatures</h4>
+                <p class="lead">Nearly all land areas are seeing more hot days and heat waves; 2020 was one of the hottest years on record. Higher temperatures increase heat-related illnesses and can make it more difficult to work and move around. Wildfires star more easily and spread more rapidly</p>
+            </div>
+            <div class="col-sm">
+                <img src="images/wildfire.jpeg" alt="wildfire" class="img-fluid">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <h4>More sever storms</h4>
+                <p class="lead">Changes in temperature cause changes in rainfall. This results in more severe and frequent storms. They cause flooding and landslide, destoying homes and communites, and costing billions in spending.</p>
+            </div>
+            <div class="col-sm">
+                <img src="images/storms.jpeg" alt="storm" class="img-fluid">
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col-sm">
+                <h4>Increased drought</h4>
+                <p class="lead">Water is becoming scarcer in more regions. Droughts can stir destructive sand and dust storms that can move billions of tons of sand across continents. Deserts are expanding, reducing land for growing food. Many people now face the threat of not having enough water on a regular basis.</p>
+            </div>
+            <div class="col-sm">
+                <img src="images/drought.jpeg" alt="drought" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer class="bg-success text-white text-center">
+        <div id="footer"></div>
+    </footer>
+    <script>
+        const date = new Date();
+        const year = date.getFullYear();
+        document.getElementById("footer").innerHTML = `
+        <small class="m-3">&copy; ${year} Copyright: Climate Action</small>
+        <br>
+        <small class="m-3">Created by Daniel</small>
+        `;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
